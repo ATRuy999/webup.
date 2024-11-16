@@ -2,13 +2,13 @@
 function loadFonts() {
     const fonts = [
         //SukhumvitSet
-        new FontFace('SukhumvitSetThin', 'url(/assets/fonts/SukhumvitSet-Thin.woff)'),
-        new FontFace('SukhumvitSetText', 'url(/assets/fonts/SukhumvitSet-Text.woff)'),
-        new FontFace('SukhumvitSetLight', 'url(/assets/fonts/SukhumvitSet-Light.woff)'),
-        new FontFace('SukhumvitSetMedium', 'url(/assets/fonts/SukhumvitSet-Medium.woff)'),
-        new FontFace('SukhumvitSetSemiBold', 'url(/assets/fonts/SukhumvitSet-SemiBold.woff)'),
-        new FontFace('SukhumvitSetBold', 'url(/assets/fonts/SukhumvitSet-Bold.woff)'),
-        new FontFace('SukhumvitSetExtraBold', 'url(/assets/fonts/SukhumvitSet-Extra%20Bold.woff)'),
+        new FontFace('SukhumvitSetThin', 'url(../assets/fonts/SukhumvitSet-Thin.woff)'),
+        new FontFace('SukhumvitSetText', 'url(../assets/fonts/SukhumvitSet-Text.woff)'),
+        new FontFace('SukhumvitSetLight', 'url(../assets/fonts/SukhumvitSet-Light.woff)'),
+        new FontFace('SukhumvitSetMedium', 'url(../assets/fonts/SukhumvitSet-Medium.woff)'),
+        new FontFace('SukhumvitSetSemiBold', 'url(../assets/fonts/SukhumvitSet-SemiBold.woff)'),
+        new FontFace('SukhumvitSetBold', 'url(../assets/fonts/SukhumvitSet-Bold.woff)'),
+        new FontFace('SukhumvitSetExtraBold', 'url(../assets/fonts/SukhumvitSet-Extra%20Bold.woff)'),
         //SFThonburi
         new FontFace('SFThonburiLight', 'url(/assets/fonts/SFThonburi.woff)'),
         new FontFace('SFThonburiRegular', 'url(/assets/fonts/SFThonburi-Regular.woff)'),
@@ -134,46 +134,46 @@ function updateDisplay() {
     let bankLogoUrl = '';
     switch (bank) {
         case 'ธ.กสิกรไทย':
-            bankLogoUrl = '/assets/image/logo/KBANK.png';
+            bankLogoUrl = '../assets/image/logo/KBANK.png';
             break;
         case 'ธ.กรุงไทย':
-            bankLogoUrl = '/assets/image/logo/KTB.png';
+            bankLogoUrl = '../assets/image/logo/KTB.png';
             break;
         case 'ธ.กรุงเทพ':
-            bankLogoUrl = '/assets/image/logo/BBL1.png';
+            bankLogoUrl = '../assets/image/logo/BBL1.png';
             break;
         case 'ธ.ไทยพาณิชย์':
-            bankLogoUrl = '/assets/image/logo/SCB.png';
+            bankLogoUrl = '../assets/image/logo/SCB.png';
             break;
         case 'ธ.กรุงศรีอยุธยา':
-            bankLogoUrl = '/assets/image/logo/BAY.png';
+            bankLogoUrl = '../assets/image/logo/BAY.png';
             break;
         case 'ธ.ทหารไทยธนชาต':
-            bankLogoUrl = '/assets/image/logo/TTB1.png';
+            bankLogoUrl = '../assets/image/logo/TTB1.png';
             break;
         case 'ธ.ออมสิน':
-            bankLogoUrl = '/assets/image/logo/O.png';
+            bankLogoUrl = '../assets/image/logo/O.png';
             break;
         case 'ธ.ก.ส.':
-            bankLogoUrl = '/assets/image/logo/T.png';
+            bankLogoUrl = '../assets/image/logo/T.png';
             break;
         case 'ธ.อาคารสงเคราะห์':
-            bankLogoUrl = '/assets/image/logo/C.png';
+            bankLogoUrl = '../assets/image/logo/C.png';
             break;
         case 'ธ.เกียรตินาคินภัทร':
-            bankLogoUrl = '/assets/image/logo/K.png';
+            bankLogoUrl = '../assets/image/logo/K.png';
             break;
         case 'ธ.ซีไอเอ็มบีไทย':
-            bankLogoUrl = '/assets/image/logo/CIMB.png';
+            bankLogoUrl = '../assets/image/logo/CIMB.png';
             break;
         case 'ธ.ยูโอบี':
-            bankLogoUrl = '/assets/image/logo/UOB.png';
+            bankLogoUrl = '../assets/image/logo/UOB.png';
             break;
         case 'ธ.แลนด์ แอนด์ เฮาส์':
-            bankLogoUrl = '/assets/image/logo/LHBANK.png';
+            bankLogoUrl = '../assets/image/logo/LHBANK.png';
             break;
         case 'ธ.ไอซีบีซี':
-            bankLogoUrl = '/assets/image/logo/ICBC.png';
+            bankLogoUrl = '../assets/image/logo/ICBC.png';
             break;
     }
 
@@ -214,7 +214,7 @@ function updateDisplay() {
             drawText(ctx, `${amount11} บาท`, 459, 1003.6,38.44, 'SukhumvitSetSemiBold', '#4b4b4b', 'right', 1.5, 3, 0, 0, 500, 0);
             drawText(ctx, `0.00 บาท`, 459, 1124.2,38.44, 'SukhumvitSetSemiBold', '#4b4b4b', 'right', 1.5, 3, 0, 0, 500, 0);
             drawText(ctx, `${QRCode}`, 238.9, 599.0,33, 'SukhumvitSetMedium', '#4e4e4e', 'left', 1.5, 5, 0, 0, 500, 0);
-            drawImage(ctx, '/assets/image/logo/KBANK.png', 34.6, 222, 157, 157);  
+            drawImage(ctx, '../assets/image/logo/KBANK.png', 34.6, 222, 157, 157);  
         
           
             // Draw the selected image
